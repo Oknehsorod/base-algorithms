@@ -48,10 +48,8 @@ function binarySearchRecursively(array, element) {
   if (element > value) {
     return firstPart.length + binarySearchRecursively(secondPart, element);
   }
-
-  if (element < value) {
-    return binarySearchRecursively(firstPart, element);
-  }
+  
+  return binarySearchRecursively(firstPart, element);
 }
 
 module.exports = {

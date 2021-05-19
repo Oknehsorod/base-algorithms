@@ -18,7 +18,7 @@ function quickSort(array) {
     }
   }
 
-  return quickSort(fPart).concat([value].concat(quickSort(sPart)));
+  return [...quickSort(fPart), value, ...quickSort(sPart)];
 }
 
 module.exports = {
