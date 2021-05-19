@@ -19,3 +19,8 @@ function linearSearchRecursively(array, element) {
 
   return 1 + linearSearchRecursively(array.slice(1), element)
 }
+
+module.exports = {
+  linearSearch,
+  linearSearchRecursively
+}
